@@ -40,9 +40,6 @@ LOCAL_CFLAGS += -DUSE_EXT4
 LOCAL_CFLAGS += -Wno-unused-parameter
 LOCAL_C_INCLUDES += system/extras/ext4_utils
 LOCAL_STATIC_LIBRARIES += libext4_utils_static libsparse_static
-ifneq ($(wildcard external/lz4/Android.mk),)
-    LOCAL_STATIC_LIBRARIES += liblz4
-endif
 endif
 
 LOCAL_STATIC_LIBRARIES += $(TARGET_RECOVERY_UPDATER_LIBS) $(TARGET_RECOVERY_UPDATER_EXTRA_LIBS)
